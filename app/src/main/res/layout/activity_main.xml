@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yang="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/id_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:background="@drawable/tab_bg"
+        android:orientation="horizontal">
+
+        <com.yang.weixin.view.ColorChangeable
+            android:id="@+id/id_indicator_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            yang:icon_="@mipmap/ic_menu_start_conversation"
+            yang:icon_color="#00ff33"
+            yang:text="@string/app_name"
+            yang:text_size="12sp" />
+
+        <com.yang.weixin.view.ColorChangeable
+            android:id="@+id/id_indicator_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            yang:icon_="@mipmap/ic_menu_friendslist"
+            yang:icon_color="#0099ff"
+            yang:text="@string/tab_contact"
+            yang:text_size="12sp" />
+
+        <com.yang.weixin.view.ColorChangeable
+            android:id="@+id/id_indicator_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            yang:icon_="@mipmap/ic_menu_allfriends"
+            yang:icon_color="#ff33ff"
+            yang:text="@string/tab_found"
+            yang:text_size="12sp" />
+
+        <com.yang.weixin.view.ColorChangeable
+            android:id="@+id/id_indicator_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="5dp"
+            yang:icon_="@mipmap/ic_menu_emoticons"
+            yang:icon_color="#3ffcfc"
+            yang:text="@string/tab_me"
+            yang:text_size="12sp" />
+    </LinearLayout>
+</LinearLayout>
